@@ -8,7 +8,7 @@
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "eslint ./src",
+		"lint": "eslint --ext .ts,.svelte ./src",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
