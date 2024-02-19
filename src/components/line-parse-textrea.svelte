@@ -14,7 +14,7 @@
 			.trim()
 			.split(/\r\n|\r|\n/)
 			.map(parseLine)
-			.filter((line) => line.length > 0);
+			.filter(line => line.length > 0);
 	}
 
 	const numberedRegex = /^\d /;

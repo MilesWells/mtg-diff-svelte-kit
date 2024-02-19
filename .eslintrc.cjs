@@ -4,7 +4,7 @@ module.exports = {
 	extends: [
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
-		'plugin:svelte/recommended'
+		'plugin:svelte/recommended',
 	],
 	plugins: ['@typescript-eslint'],
 	ignorePatterns: ['*.cjs'],
@@ -12,20 +12,20 @@ module.exports = {
 		sourceType: 'module',
 		ecmaVersion: 2020,
 		project: './tsconfig.json',
-		extraFileExtensions: ['.svelte']
+		extraFileExtensions: ['.svelte'],
 	},
 	overrides: [
 		{
 			files: ['*.svelte'],
 			parser: 'svelte-eslint-parser',
 			parserOptions: {
-				parser: '@typescript-eslint/parser'
-			}
-		}
+				parser: '@typescript-eslint/parser',
+			},
+		},
 	],
 	env: {
 		browser: true,
 		es2017: true,
-		node: true
-	}
+		node: true,
+	},
 };

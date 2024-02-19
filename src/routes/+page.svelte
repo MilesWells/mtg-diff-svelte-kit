@@ -7,7 +7,7 @@
 
 	let remainingCards = $derived.by(() => {
 		const cubeSet = new Set(cubeList);
-		removedCards.forEach((card) => cubeSet.delete(card));
+		removedCards.forEach(card => cubeSet.delete(card));
 		return Array.from(cubeSet);
 	});
 </script>
@@ -20,7 +20,7 @@
 			<p class="count">{cubeList.length} cards</p>
 		</section>
 
-		<LineParseTextrea onLinesParsed={(lines) => (cubeList = lines)} />
+		<LineParseTextrea onLinesParsed={lines => (cubeList = lines)} />
 	</section>
 
 	<section>
@@ -30,7 +30,7 @@
 			<p class="count">{removedCards.length} cards</p>
 		</section>
 
-		<LineParseTextrea onLinesParsed={(lines) => (removedCards = lines)} />
+		<LineParseTextrea onLinesParsed={lines => (removedCards = lines)} />
 	</section>
 
 	<section>
